@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+<title>Tarefa do Aluno</title>
+    <link rel="stylesheet" type="text/css" href="style_86.css" />
+    <script type="text/javascript" src="main_86.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<center>
+<div id="content">
+    <h1>Insira os Nomes dos Alunos e suas Notas</h1>
+    <div class="formLayout">
+        <label class = box1>Nome do Aluno:</label>
+        <input type="text" id="studentName"/><br/><br>
+
+        <label class = box2>Nota:</label>
+        <input type="text" id="score"/><br/><br>
+        
+        <!--Adicione o código para o botão Organizar aqui-->
+        
+        <!--Nomeie o botão como "Adicionar Nota do Aluno" no campo "value"-->
+        <label>&nbsp;</label>
+        <input type="button" id="addButton" value="Adicionar Nota do Aluno"/><br/>
+    </div>
+
+    <h2>Organizar Alunos por Nome</h2>
+
+<form id = "form">
+    <p><textarea id="scores" rows="5" cols="30" disabled="disabled"></textarea></p>
+</form>
+
+    <div class="formLayout">
+        <label>Nota média:</label>
+        <input type="text" id="averageScore" disabled="disabled"/><br/><br>
+
+        <label>&nbsp;</label>
+        <input type="button" id="clear" value="Limpar Notas dos Alunos" onclick="clear_click()"/><br/><br>
+
+        <label>&nbsp;</label> 
+        <input type="button" id="sortButton" value="Organizar por Nome do Aluno"/><br/>
+    </div>
+    </center>
+</body>
+</html>
